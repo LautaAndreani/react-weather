@@ -14,7 +14,7 @@ function App() {
 
   async function fetchJobs() {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=d15ed533b41d41f6a03145232212207&q=${input}&days=7&aqi=no&alerts=no&lang=es`
+      `https://api.weatherapi.com/v1/forecast.json?key=d15ed533b41d41f6a03145232212207&q=${input}&days=7&aqi=no&alerts=no&lang=es`
     );
     if (response.status === 400) {
       return alert('Location not found, please try again');
